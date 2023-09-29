@@ -25,7 +25,7 @@ titan_specific_kits = {
     "Monarch": ["Shield Amplifier", "Energy Thief", "Rapid Rearm", "Survival of the Fittest"]
 }
 
-# choose the titan and kit
+# choose the titan
 titan_choice = random.choice(titan)
 
 # print the loadout
