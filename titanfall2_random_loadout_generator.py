@@ -1,4 +1,4 @@
-import random
+from random import choice
 
 # pilot
 tactical = ["Cloak", "Pulse Blade", "Grapple", "Stim", "A-Wall", "Phase Shift", "Holo Pilot"]
@@ -26,19 +26,19 @@ titan_specific_kits = {
 }
 
 # choose the titan
-titan_choice = random.choice(titan)
+titan_choice = choice(titan)
 
 # print the loadout
 print("Your loadout...")
-print("Tactical: " + random.choice(tactical))
-print("Ordnance: " + random.choice(ordnance))
-print("Primary: " + random.choice(primary))
-print("Secondary: " + random.choice(secondary))
-print("Anti-Titan: " + random.choice(anti_titan))
-print("Kit 1: " + random.choice(kit1))
-print("Kit 2: " + random.choice(kit2))
+print("Tactical: " + choice(tactical))
+print("Ordnance: " + choice(ordnance))
+print("Primary: " + choice(primary))
+print("Secondary: " + choice(secondary))
+print("Anti-Titan: " + choice(anti_titan))
+print("Kit 1: " + choice(kit1))
+print("Kit 2: " + choice(kit2))
 print()
 print("Your titan...")
 print("Titan: " + titan_choice)
-print("Kit: " + random.choice(titan_main_kit))
-print(titan_choice + " Kit: " + random.choice(titan_specific_kits[titan_choice]))
+print("Kit: " + choice(titan_main_kit))
+print(titan_choice + " Kit: " + choice(titan_specific_kits[titan_choice]))
